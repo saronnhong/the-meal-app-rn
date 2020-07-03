@@ -16,13 +16,13 @@ const fetchFonts = () => {
 }
 
 export default function App() {
-  const [fontLoaded, setFountLoaded] = useState(false);
+  const [fontLoaded, setFontLoaded] = useState(false);
 
   if(!fontLoaded) {
     return (
       <AppLoading
       startAsync={fetchFonts}
-      onFinish={() => setFountLoaded(true)}
+      onFinish={() => setFontLoaded(true)}
       />
     );
   }
